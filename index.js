@@ -10,10 +10,8 @@ const router1=require("./controller/post.module.js")
 const imagerouter = require("./controller/video.module");
 const videorouter=require("./controller/postvideo.module");
 const LoginRouter=require("./Routes")
-const routersss=require("./controller/user.controller")
 app.use(express.json());
 app.use("/tumblr",router)
-app.use("/tumberwala",routersss)
 app.use("/tumblrpost",router1)
 app.use("/tumbler/image", imagerouter);
 app.use("/video",videorouter)
